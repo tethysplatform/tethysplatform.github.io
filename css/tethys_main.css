@@ -1057,6 +1057,7 @@ a:hover {
   z-index: 200;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
   background-color: #fff;
+  text-align: justify;
 }
 .features .feature {
   position: relative;
@@ -1065,7 +1066,7 @@ a:hover {
   padding: 80px 0;
   float: left;
 }
-.features .feature:last-child {
+.features .feature.end {
   margin-right: 0;
 }
 .features .feature img {

@@ -125,7 +125,7 @@ h2 {
   line-height: 40px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 300;
   line-height: 36px;
 }
@@ -1955,7 +1955,27 @@ footer.site-footer {
   padding: 21px 0;
   padding-left: 130px;
 }
+
+@media (max-width: 900px) {
+  .blurb {
+    max-height: 300px;
+  }
+}
+
 @media (max-width: 700px) {
+  .site-header .header-logo .logo-title a {
+    font-size: 28px;
+  }
+
+  .site-header .header-logo .logo-title {
+    margin-top: 5px;
+  }
+
+  .site-header .header-logo .logo-image img {
+    height: 40px;
+    margin-top: 10px;
+  }
+
   .tethys-secondary-header {
     height: 100px;
     margin-bottom: 0;

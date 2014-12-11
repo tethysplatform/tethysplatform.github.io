@@ -1065,9 +1065,13 @@ a:hover {
   margin-right: 5%;
   padding: 80px 0;
   float: left;
+  min-height: 550px;
 }
 .features .feature.end {
   margin-right: 0;
+}
+.features .feature.top {
+  padding-bottom: 0;
 }
 .features .feature img {
   position: absolute;

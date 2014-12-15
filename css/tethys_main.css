@@ -655,7 +655,7 @@ a:hover {
   float: left;
 }
 .site-header .header-logo .logo-title a {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1969,7 +1969,7 @@ footer.site-footer {
 
 @media (max-width: 700px) {
   .site-header .header-logo .logo-title a {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .site-header .header-logo .logo-title {

@@ -665,9 +665,6 @@ a:hover {
   color: #eaeaea;
   text-decoration: none;
 }
-.site-header .header-logo .logo-title a.mobile-header {
-  display: none;
-}
 .site-header .header-nav {
   position: relative;
   list-style: none;
@@ -1973,10 +1970,6 @@ footer.site-footer {
 @media (max-width: 700px) {
   .site-header .header-logo .logo-title a {
     display: none;
-  }
-
-  .site-header .header-logo .logo-title a.mobile-header {
-     display: block;
   }
 
   .site-header .header-logo .logo-title {

@@ -1134,6 +1134,7 @@ a:hover {
   }
   .features .feature {
     margin-bottom: 15%;
+    min-height: 300px;
   }
   .features .feature img {
     width: 70%;
@@ -1145,7 +1146,7 @@ a:hover {
     margin-top: 80%;
   }
   .features .feature span {
-    padding: 0 10%;
+    padding: 0 5%;
   }
 }
 /* ===========================================
@@ -1198,7 +1199,7 @@ a:hover {
 }
 .get-started-background {
   display: none;
-  background-image: url(/tethys/images/Pepsized_Blur_01.jpg);
+  background-image: url('http://ci-water.github.io/tethys/images/Pepsized_Blur_01.jpg');
   background-position: center;
   background-size: cover;
   position: fixed;

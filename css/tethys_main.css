@@ -1199,7 +1199,7 @@ a:hover {
 }
 .get-started-background {
   display: none;
-  background-image: url('http://ci-water.github.io/tethys/images/Pepsized_Blur_01.jpg');
+  background-image: url('http://ci-water.github.io/tethys/images/Pepsized_Blur_01-compressed.jpg');
   background-position: center;
   background-size: cover;
   position: fixed;

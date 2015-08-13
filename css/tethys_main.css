@@ -241,7 +241,7 @@ a:hover {
 #site-wrapper:after {
   /* .push must be the same height as footer */
 
-  height: 500px;
+  height: 541px;
 }
 @media (max-width: 860px) {
   #site-wrapper {
@@ -286,6 +286,22 @@ a:hover {
   -o-transition: background-color 0.4s, color 0.4s;
   -ms-transition: background-color 0.4s, color 0.4s;
   transition: background-color 0.4s, color 0.4s;
+}
+.action-col.one{
+  left: 20%;
+}
+.action-col.two{
+  left: 50%;
+}
+.action-col.three{
+  left: 80%;
+}
+@media (max-width: 1100px) {
+  .action-col.one, .action-col.two, .action-col.three{
+    position: relative;
+    left:50%;
+    margin-bottom: 25px;
+  }
 }
 /*
 .non-default-btn() {
@@ -1624,8 +1640,12 @@ footer.site-footer {
   position: relative;
   z-index: 100;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
-  padding: 0 20px;
   overflow: auto;
+}
+.footer-row {
+  width: 100%;
+  padding: 0 20px;
+  display: inline-block;
 }
 .footer-col {
   float: left;
@@ -1672,10 +1692,10 @@ footer.site-footer {
   text-transform: none;
   letter-spacing: 0;
 }
-.copyright-wrapper {
+.attribution-wrapper {
   margin-top: 40px;
 }
-.copyright {
+.attribution {
   display: block;
   font-weight: 300;
   font-size: 16px;
@@ -1683,15 +1703,35 @@ footer.site-footer {
   margin-top: 30px;
   margin-left: 0;
 }
+.attribution a {
+  text-decoration: none;
+  color: #efefef;
+}
+.attribution a:hover {
+  color: #ffffff;
+}
+.attribution-bottom {
+  display: none;
+}
+.footer-footer {
+  background-color: #074271;
+}
+.nsf-logo {
+  height: 100px;
+}
+.copyright {
+  font-size: 12px;
+  color: #efefef;
+  display: inline-block;
+  font-weight: 300;
+  margin: 15px;
+}
 .copyright a {
   text-decoration: none;
   color: #efefef;
 }
-.copyright a:hover {
-  color: #ffffff;
-}
-.copyright-bottom {
-  display: none;
+.right {
+  float: right;
 }
 @media (max-width: 860px) {
   .footer-col > .png-cp-logo {
@@ -1722,15 +1762,15 @@ footer.site-footer {
   .footer-col h5 {
     margin-top: 20px;
   }
-  .copyright-bottom {
+  .attribution-bottom {
     display: block;
     position: relative;
     margin-top: 40px;
   }
-  .copyright-bottom img {
+  .attribution-bottom img {
     width: 100px;
   }
-  .copyright-bottom .copyright {
+  .attribution-bottom .attribution {
     margin-top: 40px;
     font-size: 18px;
     text-align: center;

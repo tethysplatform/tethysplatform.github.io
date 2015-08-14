@@ -1205,7 +1205,8 @@ a:hover {
 }
 /* ===========================================
    Get Started Section
-   =========================================== */.get-started {
+   =========================================== */
+.get-started {
   height: 300px;
   max-height: 300px;
   overflow: auto;
@@ -1658,6 +1659,12 @@ footer.site-footer {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+.footer-col.three ul{
+  margin-left: 40%;
+}
+.footer-col.three li{
+  text-align: left;
+}
 .footer-col:nth-child(3) {
   margin-right: 0;
 }
@@ -1726,6 +1733,10 @@ footer.site-footer {
 }
 .sponsor-alt{
   display: none;
+}
+.connect-img{
+  height: 30px;
+  padding-right: 5px;
 }
 .copyright {
   font-size: 12px;

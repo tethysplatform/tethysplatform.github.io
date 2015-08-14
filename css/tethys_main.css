@@ -241,7 +241,7 @@ a:hover {
 #site-wrapper:after {
   /* .push must be the same height as footer */
 
-  height: 541px;
+  height: 500px;
 }
 @media (max-width: 860px) {
   #site-wrapper {
@@ -251,7 +251,7 @@ a:hover {
   #site-wrapper:after {
     /* .push must be the same height as footer */
   
-    height: 800px;
+    height: 960px;
   }
 }
 /* ===========================================
@@ -1649,10 +1649,10 @@ footer.site-footer {
 }
 .footer-col {
   float: left;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-bottom: 45px;
   margin-right: 5%;
-  min-height: 50px;
+  min-height: 350px;
   width: 30%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1715,9 +1715,17 @@ footer.site-footer {
 }
 .footer-footer {
   background-color: #074271;
+  height: 50px;
 }
 .nsf-logo {
   height: 100px;
+}
+.sponsor-img{
+  height: 40px;
+  margin: 10px;
+}
+.sponsor-alt{
+  display: none;
 }
 .copyright {
   font-size: 12px;
@@ -1744,6 +1752,7 @@ footer.site-footer {
     width: 100%;
     margin: 0;
     text-align: center;
+    min-height: 250px;
   }
   .footer-col.one {
     display: none;
@@ -1774,6 +1783,15 @@ footer.site-footer {
     margin-top: 40px;
     font-size: 18px;
     text-align: center;
+  }
+  .copyright.right{
+    display: none;
+  }
+  .sponsor-img{
+    display: none;
+  }
+  .sponsor-alt{
+    display: inline-block;
   }
 }
 .account-form-wrapper {

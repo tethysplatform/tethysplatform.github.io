@@ -285,23 +285,6 @@ var CIWATER_THEME = (function() {
 			});
 		});
 
-		// Bind to the click events on the mobile nav buttons
-		$('.mobile-nav-button.mobile-links').on('click', function() {
-			$('.mobile-nav.mobile-nav-links').toggleClass('in');
-
-			if ($('.mobile-nav.mobile-user-links').hasClass('in')) {
-				$('.mobile-nav.mobile-user-links').toggleClass('in');
-			}
-		});
-
-		$('.mobile-nav-button.mobile-user').on('click', function() {
-			$('.mobile-nav.mobile-user-links').toggleClass('in');
-
-			if ($('.mobile-nav.mobile-nav-links').hasClass('in')) {
-				$('.mobile-nav.mobile-nav-links').toggleClass('in');
-			}
-		});
-
 		// Set initial values of float image
 		if ($(document).find('#home-page').length > 0) {
 			HERO_WAVE_INITIAL_TOP = $('.hero .bucket .float-image.wave').position().top;

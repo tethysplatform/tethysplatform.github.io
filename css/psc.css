@@ -48,3 +48,10 @@
   color: #888888;
   margin: 0;
 }
+
+@media (max-width: 992px) {
+    #project-steering-committee {
+        margin: 0 50px;
+        margin-bottom: 50px;
+    }
+}

@@ -31,28 +31,30 @@
         <li><a href="http://docs.tethysplatform.org" title="Documentation">Documentation</a></li>
         <li><a href="http://demo.tethysplatform.org/apps" title="Demo">Demo</a></li>
         <li><a href="https://github.com/tethysplatform/tethys">Code</a></li>
+        <li><a href="https://groups.google.com/forum/#!forum/tethysplatform">Join the Discussion</a></li>
+        <li><a href="/project-steering-committee">Project Steering Committee</a></li>
       </ul>
     </div>
     <div class="header-wrapper">
       <header class="site-header">
         <div class="header-logo">
-          <a class="logo-image" href=""><img src="./images/tethys-logo-75.png"></a>
+          <a class="logo-image" href="/"><img src="./images/tethys-logo-75.png"></a>
           <h1 class="logo-title">
-            <a href="">Tethys Platform</a>
+            <a href="/">Tethys Platform</a>
           </h1>
         </div>
         <ul class="header-nav">
           <li>
-            <a href="http://docs.tethysplatform.org/en/latest/tutorials.html" title="Tutorials">Tutorials</a>
+            <a href="javascript:void(0);" class="drop-down-trigger" data-target=".header-dropdown-menu.getting-started" data-mask=".header-dropdown-menu-mask.getting-started" title="Getting Started">Getting Started</a>
           </li>
           <li>
-            <a href="http://docs.tethysplatform.org" title="Documentation">Documentation</a>
+            <a title="Code" href="https://github.com/tethysplatform/tethys">Code</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="drop-down-trigger" data-target=".header-dropdown-menu.community" data-mask=".header-dropdown-menu-mask.community" title="Community">Community</a>
           </li>
           <li>
             <a href="http://demo.tethysplatform.org/apps" title="Demo">Demo</a>
-          </li>
-          <li>
-            <a href="https://github.com/tethysplatform/tethys">Code</a>
           </li>
         </ul>
         <a class="mobile-nav-button mobile-links">
@@ -61,6 +63,22 @@
           <div></div>
         </a>
       </header>
+    </div>
+    <div class="header-dropdown-menu-mask community"></div>
+    <div class="header-dropdown-menu community">
+      <ul>
+        <li><a title="Fork on GitHub" href="https://github.com/tethysplatform/tethys">Fork on GitHub</a></li>
+        <li><a title="Join the Discussion" href="https://groups.google.com/forum/#!forum/tethysplatform">Join the Discussion</a></li>
+        <li><a title="Report an Issue" href="https://github.com/tethysplatform/tethys/issues">Report an Issue</a></li>
+        <li><a title="Project Steering Committee" href="/project-steering-committee">Project Steering Committee</a></li>
+      </ul>
+    </div>
+    <div class="header-dropdown-menu-mask getting-started"></div>
+    <div class="header-dropdown-menu getting-started">
+      <ul>
+        <li><a href="http://docs.tethysplatform.org" title="Documentation">Documentation</a></li>
+        <li><a href="http://docs.tethysplatform.org/en/latest/tutorials.html" title="Tutorials">Tutorials</a></li>
+      </ul>
     </div>
     <div id="site-wrapper" class="wrapper">
       <section class="hero clearfix">
@@ -198,5 +216,6 @@ exercises using your models into easy-to-use workflows and apps.</h3></div>
       </div>
     </footer>
     <script src="./js/tethys_main.js" type="text/javascript"></script>
+    <script src="./js/dropdown_menu.js" type="text/javascript"></script>
   </body>
 </html>

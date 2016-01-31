@@ -55,6 +55,69 @@
   font-weight: 700;
   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
 }
+/* =================
+   Header dropdown
+   ================= */
+
+.header-dropdown-menu-mask {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.header-dropdown-menu-mask.active {
+    display: block;
+}
+
+.header-dropdown-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    background-color: #ffffff;
+    border: 1px #aaaaaa solid;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1010;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.header-dropdown-menu.community {
+    right: 44px;
+}
+
+.header-dropdown-menu.getting-started {
+    right: 376px;
+    width: 148px;
+}
+
+.header-dropdown-menu.open {
+    display: block;
+}
+
+.header-dropdown-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.header-dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.header-dropdown-menu li a:hover {
+    background: #1b95dc;
+    color: #ffffff;
+}
+
 /* ===========================================
    General and Typography
    =========================================== */
@@ -742,6 +805,24 @@ a:hover {
   transition: background-color 0.3s, color 0.3s;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+.site-header .header-nav li a {
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.site-header .header-nav li a:hover {
+    background: #1b95dc;
+}
+
+.site-header .header-nav li a.active {
+    background: #1b95dc;
+}
+
+.site-header .header-nav {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
 /* User logged-in dropdown menu */
 .user-dropdown .user-dropdown-menu {
   position: fixed;
@@ -1216,7 +1297,7 @@ a:hover {
 }
 .get-started-background {
   display: none;
-  background-image: url('http://ci-water.github.io/tethys/images/Pepsized_Blur_01-compressed.jpg');
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -1232,7 +1313,6 @@ a:hover {
   top: 67px;
 }
 .get-started .get-started-message h2 {
-  color: #fff;
   font-size: 33px;
   text-align: center;
 }
@@ -1240,9 +1320,13 @@ a:hover {
   width: 300px;
   margin-left: -150px;
   cursor: pointer;
+  color: #666;
+  background-color: #ddd;
 }
 .get-started .hero-action:hover {
   text-decoration: none;
+  background-color: #2ca6ed;
+  color: #ffffff;
 }
 @media (max-width: 515px) {
   .get-started .get-started-message {
@@ -1943,6 +2027,10 @@ footer.site-footer {
   margin-bottom: -65px;
 }
 @media (max-width: 992px) {
+  .site-header .header-logo .logo-title a {
+    display: none;
+  }
+
   .profile-header {
     height: 125px;
   }

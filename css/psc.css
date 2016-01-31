@@ -11,6 +11,10 @@
   color: #666666;
 }
 
+#project-steering-committee ul, #project-steering-committee ol {
+    margin-bottom: 0.5em;
+}
+
 #project-steering-committee li {
   color: #666666;
 }

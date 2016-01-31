@@ -6,8 +6,9 @@
 
 #project-steering-committee p {
   font-size: 16px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
   line-height: 1.75;
+  color: black;
 }
 
 #project-steering-committee h1 {

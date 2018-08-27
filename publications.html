@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Django">
-    <title> Tethys Platform - Welcome!</title>
+    <title> Tethys Platform - Publications</title>
     <link rel="shortcut icon" href="./images/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/tethys_main.css" rel="stylesheet">
+    <link href="css/psc.css" rel="stylesheet">
+    <link href="css/publications.css" rel="stylesheet">
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/bootstrap.min.js" type="text/javascript"></script>
     <script>
@@ -21,7 +23,6 @@
 
       ga('create', 'UA-56964943-2', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
@@ -71,7 +72,6 @@
         <li><a title="Join the Discussion" href="https://groups.google.com/forum/#!forum/tethysplatform">Join the Discussion</a></li>
         <li><a title="Report an Issue" href="https://github.com/tethysplatform/tethys/issues">Report an Issue</a></li>
         <li><a title="Project Steering Committee" href="/project-steering-committee">Project Steering Committee</a></li>
-        <li><a title="Project Road Map" href="https://docs.google.com/a/aquaveo.com/spreadsheets/d/1he1o2JOcgUaaUOZRTQlgeZLUwEpU5jKCxqhMvade92w/edit?usp=sharing">Project Road Map</a></li>
       </ul>
     </div>
     <div class="header-dropdown-menu-mask getting-started"></div>
@@ -82,80 +82,28 @@
       </ul>
     </div>
     <div id="site-wrapper" class="wrapper">
-      <section class="hero clearfix">
-        <div class="hero-background"></div>
-        <div class="bucket clearfix">
-          <img class="float-image wave" src="./images/water-curl-wave-compressed.png" style="margin-top: 0px; top: 168px; -webkit-transform: rotate(0deg); transform: rotate(0deg);">
-          <img class="float-image drops" src="./images/water-curl-drops-compressed.png" style="margin-top: 0px; top: 168px; left: -100px;">
-          <div class="hero-message" style="margin-top: 0px; top: 125px;">
-            <h2>Water resources web applications
-for the 21st century.</h2>
-              <a href="http://docs.tethysplatform.org" class="action hero-action">Learn More</a>
-          </div>
-        </div>
-      </section>
+      <section id="project-steering-committee">
+        <h1>Publications</h1>
 
-      <section class="blurb clearfix">
-        <div class="bucket clearfix">
-          <h3>Tethys Platform has been designed to lower the barrier to water resources web
-app development. Convey your models and data as interactive web apps.</h3>
-        </div>
-      </section>
+        <h2>Tethys Platform</h2>
+        <p class="hanging-indent">Swain, N. R., Latu, K., Christensen, S. D., Jones, N. L., Nelson, E. J., Ames, D. P., & Williams, G. P. (2015). A review of open source software solutions for developing water resources web applications. Environmental Modelling & Software, 67, 108-117.</p>
+        <p class="hanging-indent">Swain, N. R., Christensen, S. D., Snow, A. D., Dolder, H., Espinoza-Dávalos, G., Goharian, E., Jones, N. L., Ames, D.P., & Burian, S. J. (2016). A new open source platform for lowering the barrier for environmental web app development. Environmental Modelling & Software, 85, 11-26.</p>
 
-      <section class="features clearfix">
-        <div class="bucket clearfix">
-          <div class="feature one top">
-            <a href="http://docs.tethysplatform.org/en/latest/tethys_sdk.html"><img src="./images/sdk.png" alt=""></a>
-            <h4>Tethys SDK</h4>
-            <span>Tethys web apps are built using a Python-powered Software Development Kit. In addition to the tools provided by Tethys, you can incorporate any Python module that your app needs to work with your models and data.</span>
-          </div>
-          <div class="feature two top">
-            <a href="http://docs.tethysplatform.org/en/latest/tethys_sdk/dataset_services.html"><img src="./images/datastore.png" alt=""></a>
-            <h4>Data</h4>
-            <span>Data is at the core of any modern web app. Tethys Platform provides an API for incorporating data that is published using <a href="http://ckan.org/" target="_blank">CKAN</a> instances like <a href="http://data.gov" target="_blank">data.gov</a> or <a href="http://hydroshare.cuahsi.org/" target="_blank">HydroShare</a>.</span>
-          </div>
-          <div class="feature three top end">
-            <a href="http://docs.tethysplatform.org/en/latest/tethys_sdk/cloud_computing.html"><img src="./images/computing.png" alt=""></a>
-            <h4>Cloud Analysis</h4>
-            <span>Need more computing power to run your models? Create a Tethys web app that will run your analysis in the cloud. Scale computing nodes to match demand using commercial clouds like <a href="https://aws.amazon.com" target="_blank">Amazon AWS</a> or <a href="http://azure.microsoft.com/" target="_blank">Microsoft Azure</a>.</span>
-          </div>
-          <div class="feature four">
-            <a href="http://docs.tethysplatform.org/en/latest/tethys_sdk/gizmos.html"><img src="./images/gizmos.png" alt=""></a>
-            <h4>Visualization</h4>
-            <span>Contemporary web users expect beautiful, interactive interfaces. Tethys Platform provides Gizmos that allow you to insert common user interface elements into your app with minimal coding. With Gizmos, you can present your data using <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps</a>, <a href="https://developers.google.com/earth/" target="_blank">Google Earth</a>, <a href="http://openlayers.org/" target="_blank">OpenLayers</a>, or <a href="http://www.highcharts.com/" target="_blank">Highcharts</a>.</span>
-          </div>
-          <div class="feature five">
-            <a href="http://demo.tethysplatform.org/apps"><img src="./images/models.png" alt=""></a>
-            <h4>Models</h4>
-            <span>Make your water resources models more accessible by creating a web app that makes it easier to edit model files, run the model, and view the results. Use your web app as a demonstration for stakeholders, as a finished product for clients, or as a teaching tool in the classroom.</span>
-          </div>
-          <div class="feature six end">
-            <a href="http://docs.tethysplatform.org/en/latest/software_suite.html"><img src="./images/geoprocessing.png" alt=""></a>
-            <h4>Web GIS</h4>
-            <span>Tethys Platform is equipped to work with your spatial datasets. The web GIS software suite provided by Tethys includes <a href="http://www.postgresql.org/" target="_blank">PostgreSQL</a> with <a href="http://postgis.net/" target="_blank">PostGIS</a> for spatial SQL storage, <a href="http://geoserver.org/" target="_blank">GeoServer</a> for spatial data publishing, and <a href="http://52north.org/communities/geoprocessing/wps/" target="_blank">52&deg;North WPS</a> with <a href="http://grass.osgeo.org/" target="_blank">GRASS</a> and <a href="http://www.wikiwand.com/es/SEXTANTE_(SIG)" target="_blank">Sextante</a> enabled for geoprocessing.</span>
-          </div>
-        </div>
-      </section>
+        <h2>Tethys Apps</h2>
+        <p class="hanging-indent">Snow, A. D., Christensen, S. D., Swain, N. R., Nelson, E. J., Ames, D. P., Jones, N. L., Ding, D., Noman, N.S., David, C.H., Pappenberger, F. & Zsoter, E. (2016). A High‐Resolution National‐Scale Hydrologic Forecast System from a Global Ensemble Land Surface Model. JAWRA Journal of the American Water Resources Association, 52(4), 950-964.</p>
 
-      <section class="testimonial">
-        <div class="bucket">
-          <h2>A new way to use water resources models.</h2>
-          <h3>Water resources models can provide powerful insight during critical decision
-making, but it often takes an expert to equip a model for a new scenario.
-Use Tethys Platform to distill the most common scenario exploration
-exercises using your models into easy-to-use workflows and apps.</h3></div>
-      </section>
-
-      <section class="get-started clearfix">
-        <div class="get-started-background" style="display: none;"></div>
-        <div class="bucket clearfix">
-          <div class="get-started-message">
-            <h2>Get Involved</h2>
-            <a class="action hero-action action-col one" href="https://github.com/tethysplatform/tethys">Fork on GitHub</a>
-            <a class="action hero-action action-col two" href="https://github.com/tethysplatform/tethys/issues">Submit an Issue</a>
-            <a class="action hero-action action-col three" href="https://groups.google.com/d/forum/tethysplatform">Join the Discussion</a>
-          </div>
-        </div>
+        <h3>How do I add my citation?</h3>
+        <ol>
+          <li>Fork the <a href="https://github.com/tethysplatform/tethysplatform.github.io">tethysplatform.github.io</a> repository.</li>
+          <li>Add your citation to the <a href="https://github.com/tethysplatform/tethysplatform.github.io/blob/master/publications.html">publications.html</a> page following these guidelines:</li>
+            <ul>
+              <li>Use the <a href="https://www.mendeley.com/guides/apa-citation-guide">APA</a> format.</li>
+              <li>List citations in approriate section (i.e.: papers about apps in the <b>Tethys Apps</b> section and papers related to platform devleopment in the "Tethys Platform" section).</li>
+              <li>List citations in Alphebetical order of author(s), chronological order if multiple for the same author(s).</li>
+            </ul>
+          <li>Submit a pull request with your changes.</li>
+          <li>We will do our best to review in a timely manner. Be sure to watch the pull request thread for feedback.</li>
+        </ol>
       </section>
       <div id="home-page" style="display: none;"></div>
     </div>
@@ -217,7 +165,6 @@ exercises using your models into easy-to-use workflows and apps.</h3></div>
         <span class="copyright right">Licensed under the <a href="http://www.tldrlegal.com/l/freebsd" target="_blank">BSD 2-Clause</a></span>
       </div>
     </footer>
-    <script src="./js/tethys_main.js" type="text/javascript"></script>
     <script src="./js/dropdown_menu.js" type="text/javascript"></script>
   </body>
 </html>

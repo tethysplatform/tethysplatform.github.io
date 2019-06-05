@@ -70,11 +70,11 @@ var CIWATER_THEME = (function() {
  		if ($(document).find('#home-page').length > 0) {
 	 		// Constants
 	 		var HERO_MESSAGE_INITIAL_TOP = 125,
-		 			HERO_MESSAGE_PARALLAX_RATE = 0.5,
-		 			HERO_WAVE_PARALLAX_RATE = 0.25,
-		 			HERO_DROPS_PARALLAX_TOP_RATE = -0.05,
-		 			HERO_DROPS_PARALLAX_LEFT_RATE = 0.25,
-		 			HERO_IMG_ROTATION_RATE = 0.02;
+                HERO_MESSAGE_PARALLAX_RATE = 0.5,
+                HERO_WAVE_PARALLAX_RATE = 0.25,
+                HERO_DROPS_PARALLAX_TOP_RATE = -0.05,
+                HERO_DROPS_PARALLAX_LEFT_RATE = 0.25,
+                HERO_IMG_ROTATION_RATE = 0.02;
 
 	 		// Variable declarations
 	 		var get_started,

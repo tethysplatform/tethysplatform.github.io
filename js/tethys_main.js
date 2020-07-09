@@ -10,7 +10,7 @@
  *                      LIBRARY WRAPPER
  *****************************************************************************/
 
-var CIWATER_THEME = (function() {
+var TETHYS_THEME = (function() {
 	// Wrap the library in a package function
 	"use strict"; // And enable strict mode for this library
 
@@ -18,9 +18,7 @@ var CIWATER_THEME = (function() {
  	*                      MODULE LEVEL / GLOBAL VARIABLES
  	*************************************************************************/
  	var public_interface,				// Object returned by the module
- 	    HERO_WAVE_INITIAL_TOP,
- 	    HERO_DROPS_INITIAL_TOP,
- 	    HERO_DROPS_INITIAL_LEFT,
+ 	    HERO_IMG_INITIAL_TOP,
  	    FORM_TRIGGER_WIDTH,
  	    SECONDARY_TRIGGER_WIDTH,
  	    TAB_BAR_TRIGGER_WIDTH;
@@ -70,11 +68,9 @@ var CIWATER_THEME = (function() {
  		if ($(document).find('#home-page').length > 0) {
 	 		// Constants
 	 		var HERO_MESSAGE_INITIAL_TOP = 125,
-		 			HERO_MESSAGE_PARALLAX_RATE = 0.5,
-		 			HERO_WAVE_PARALLAX_RATE = 0.25,
-		 			HERO_DROPS_PARALLAX_TOP_RATE = -0.05,
-		 			HERO_DROPS_PARALLAX_LEFT_RATE = 0.25,
-		 			HERO_IMG_ROTATION_RATE = 0.02;
+                HERO_MESSAGE_PARALLAX_RATE = 0.5,
+                HERO_IMG_PARALLAX_RATE = 0.25,
+                HERO_IMG_ROTATION_RATE = 0.02;
 
 	 		// Variable declarations
 	 		var get_started,
@@ -82,8 +78,7 @@ var CIWATER_THEME = (function() {
 	 			get_started_in,
 	 			header_height,
 	 			hero_message,
-	 			hero_float_img_wave,
-	 			hero_float_img_drops,
+	 			hero_float_img,
 	 			hero_in,
 	 			scroll_position;
 
@@ -93,8 +88,7 @@ var CIWATER_THEME = (function() {
 
 	 		// Get hero message
 	 		hero_message = $('.hero-message');
-	 		hero_float_img_wave = $('.hero .bucket .float-image.wave');
-	 		hero_float_img_drops = $('.hero .bucket .float-image.drops');
+	 		hero_float_img = $('.hero .bucket .float-image');
 	 		get_started_background = $('.get-started-background');
 
 	 		// Determine what's in
@@ -103,28 +97,22 @@ var CIWATER_THEME = (function() {
 
 	 		if (hero_in) {
 	 			var hero_message_position,
-	 			    hero_wave_position,
-	 			    hero_drops_top,
-	 			    hero_drops_left,
+	 			    hero_img_position,
 	 			    hero_img_rotation;
 
 	 			// Calculate position
 	 			hero_message_position = (HERO_MESSAGE_PARALLAX_RATE * scroll_position) + (HERO_MESSAGE_INITIAL_TOP);
-	 			hero_wave_position =  HERO_WAVE_INITIAL_TOP - (HERO_WAVE_PARALLAX_RATE * scroll_position);
-	 			hero_drops_top = HERO_DROPS_INITIAL_TOP - (HERO_DROPS_PARALLAX_TOP_RATE * scroll_position);
-	 			hero_drops_left = HERO_DROPS_INITIAL_LEFT + (HERO_DROPS_PARALLAX_LEFT_RATE * scroll_position);
+	 			hero_img_position =  HERO_IMG_INITIAL_TOP - (HERO_IMG_PARALLAX_RATE * scroll_position);
 	 			hero_img_rotation =  HERO_IMG_ROTATION_RATE * scroll_position;
 
 	 			// Set styles
 	 			hero_message.css('top', hero_message_position);
-	 			hero_float_img_wave.css('top', hero_wave_position);
-	 			hero_float_img_drops.css('top', hero_drops_top);
-	 			hero_float_img_drops.css('left', hero_drops_left);
-	 			hero_float_img_wave.css('-webkit-transform', 'rotate(' + hero_img_rotation + 'deg)');
-	 			hero_float_img_wave.css('-moz-transform', 'rotate(' + hero_img_rotation + 'deg)');
-	 			hero_float_img_wave.css('-o-transform', 'rotate(' + hero_img_rotation + 'deg)');
-	 			hero_float_img_wave.css('-ms-transform', 'rotate(' + hero_img_rotation + 'deg)');
-	 			hero_float_img_wave.css('transform', 'rotate(' + hero_img_rotation + 'deg)');
+	 			hero_float_img.css('top', hero_img_position);
+	 			hero_float_img.css('-webkit-transform', 'rotate(' + hero_img_rotation + 'deg)');
+	 			hero_float_img.css('-moz-transform', 'rotate(' + hero_img_rotation + 'deg)');
+	 			hero_float_img.css('-o-transform', 'rotate(' + hero_img_rotation + 'deg)');
+	 			hero_float_img.css('-ms-transform', 'rotate(' + hero_img_rotation + 'deg)');
+	 			hero_float_img.css('transform', 'rotate(' + hero_img_rotation + 'deg)');
 
 	 			// Unlight "Log In" action button
 	 			if ($('.header-action').hasClass('lit')) {
@@ -287,9 +275,7 @@ var CIWATER_THEME = (function() {
 
 		// Set initial values of float image
 		if ($(document).find('#home-page').length > 0) {
-			HERO_WAVE_INITIAL_TOP = $('.hero .bucket .float-image.wave').position().top;
-			HERO_DROPS_INITIAL_TOP = $('.hero .bucket .float-image.drops').position().top;
-			HERO_DROPS_INITIAL_LEFT = $('.hero .bucket .float-image.drops').position().left;
+			HERO_IMG_INITIAL_TOP = $('.hero .bucket .float-image').position().top;
 		}
 
 		// DOM Modifications for mobile versions
@@ -317,11 +303,11 @@ var CIWATER_THEME = (function() {
 function toggle_menu(user, toggle, menu_id) {
 	"use strict";
 
-	CIWATER_THEME.toggle_menu(user, toggle, menu_id);
+	TETHYS_THEME.toggle_menu(user, toggle, menu_id);
 }
 
 function hide_menu() {
 	"use strict";
 
-	CIWATER_THEME.hide_menu();
+	TETHYS_THEME.hide_menu();
 }

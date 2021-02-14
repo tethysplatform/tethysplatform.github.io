@@ -194,34 +194,14 @@
         <p>By using the issue tracking system requesting a code modification the community member is, in essence, suggesting or proposing that a change be made. Discussion about the proposed change directly in the issue tracker is welcomed and encouraged among all interested community members. If, after appropriate discussion, the PSC deems that the suggested changes in an issue are in line with the project direction then they will add the issue to a milestone and, when suitable, assign it to a specific developer. Alternatively, the issue can be labeled with “help wanted” to encourage community members to address the issue and submit a PR. If the PSC does not accept an issue then they should mark it with the “wontfix” label and close it.</p>
         <p>The process for accepting an issue is informal and does not require the formal approval process that is required by PRs since the issue does not include any actual changes to the code. However, it should be assumed that if an issue is accepted (i.e. not disputed), that a pull request that implements the suggested changes will also be accepted provided that the implementation meets the contribution guidelines.</p>
         <h3>Submitting Pull Requests</h3>
-        <p>START HERE</p>
-        <ol>
-          <li><p>Proposals can be written and submitted on the <a href="https://groups.google.com/forum/#!forum/tethysplatform">Tethys Platform GitHub Discussions</a>. The proposal must include a proposed assignee and a future version in which to complete the proposal, though the PSC will make the final decision. Proposals should be tagged as such using the "Proposal" tag on the forum. It should be rare that new proposals are immediately acted upon, most requests should be carefully planned and attached to a future new feature release. When a proposal is a feature or change that should be done in the current new feature release, the proposal should be accompanied by a technical scheme to solve it.</p></li>
-          <li><p>Any member of the forum can write and submit proposals. Any interested party can request membership on the forum, though membership may or may not be granted or may be revoked at the discretion of the PSC.</p></li>
-          <li><p>Typically, proposals should only be made for new feature requests or major changes. Bugs should be reported on the issues page of the primary Tethys GitHub repository: https://github.com/tethysplatform/tethys/issues. Minor updates to existing features and bug fixes that are backwards compatible don't need voting. Still we encourage committers not to abuse this "right". If in doubt, call in a vote! If after the commits the PSC disagrees, the committer has the responsibility of undoing the changes without causing other people to redo their work.</p></li>
-          <li><p>Proposals need to be publicly available for discussion. It is the submitter's responsibility to start a vote after this discussion. At that time, the vote must be open for a minimum of 3 business days.</p></li>
-          <li><p>The decision making is a democratic process. Voting and commenting should always occur on the <a href="https://groups.google.com/forum/#!forum/tethysplatform">Tethys Platform GitHub Discussions</a>.</p></li>
-          <li>
-            <p>The following votes are valid:</p>
-            <ul>
-              <li><b>"+1"</b> to indicate support for the motion and a willingness to support implementation.</li>
-              <li><b>"-1"</b> to veto a proposal, but must provide a clear reasoning and alternate approaches to resolving the problem within two days.</li>
-              <li><b>"0"</b> to indicate no opinion on the proposal.</li>
-              <li><b>"+0"</b> to indicate mild support.</li>
-              <li><b>"-0"</b> to indicate mild disagreement.</li>
-              <li>All <b>"0"</b> votes have no effect.</li>
-            </ul>
-          </li>
-          <li><p>Any member of the forum may comment and vote on proposals, but only PSC member votes are binding.</p></li>
-          <li><p>A proposal will be accepted if it receives <b>"+2"</b> (including the author if he is a PSC member) and no vetoes (<b>"-1"</b>).</p></li>
-          <li><p>If a proposal is vetoed, and it cannot be revised to satisfy all parties, then it can be resubmitted for an override vote in which a majority of all PSC members must vote <b>"+1"</b> in order to pass it.</p></li>
-          <li><p>Upon completion of the discussion and voting, the PSC chair or an appointed PSC member closes the vote and summarizes the results of PSC member votes.  The author should then announce whether they are proceeding (proposal accepted) or are withdrawing their proposal (vetoed).</p></li>
-          <li><p>Addition and removal of PSC members, project developers, and election of the chair is handled as a motion. However a majority vote is required in these cases.</p></li>
-          <li><p>The chair gets a vote and is responsible for adjudicating should there be a voting dispute.</p></li>
-        </ol>
-        
-        <h2>Amendments</h2>
-        <p>Changes to this governing document can be proposed on the <a href="https://github.com/tethysplatform/tethys/discussions">Tethys Platform GitHub Discussions</a> by any member of the forum by creating a post with the "Amendment" tag. The specific language and section must be included in the proposal. As with other motions, the voting and comment period must last a minimum of 3 business days and only PSC member votes are binding. An amendment motion passes with a 2/3 majority of PCS members voting <b>"+1"</b>. No vetoes are allowed for amendment motion votes.</p>
+        <p>The most formal way to submit a code modification is by submitting a pull request (PR) that includes all of the proposed modifications. All changes to the code base must be submitted as a PR. PRs that incorporate new features or major changes go through a formal review and approval process before they are merged into the code base.</p>
+        <p>Minor updates to existing features and bug fixes that are backwards compatible don't need official approval from the PSC, but should still go through the review processes. Once the review is complete then the code may be immediately merged by someone with commit access. However, those with commit access should not abuse this "right". If in doubt, get official approval from the PSC! If, after a commit, the PSC disagrees, the committer has the responsibility of undoing the changes without causing other people to redo their work.</p>
+        <h4>Review Process</h4>
+        <p>When a new PR is received the submitter, if at all possible, should present/demo/describe the changes to the community at the next possible weekly scrum call. (If the submitter is unable to present the PR during a scrum then they may so indicate via the comments on the PR and request that a review be assigned.) The PSC will then assign someone (either a PSC member or another member of the repository) to review the PR and make an official recommendation. Anyone from the community is also welcome and encouraged to review and comment on PRs. The reviewer may provide feedback to the developer who submitted the PR and suggest changes that would enable them to give a positive recommendation. Once the review process is complete and the reviewer has made an official recommendation to the PSC, the official approval process begins.</p>
+        <h4>Approval Process</h4>
+        <p>For a PR to be officially approved and merged into the code at least two PSC members must approve the PR after it has been reviewed and a recommendation is made, and no members of the PSC disapprove. If a PSC member disapproves they must provide a clear reasoning and, if applicable, alternate approaches to resolving the problem within two days. If the person that is submitting the PR is a PSC member, then they may still be one of the PSC members to approve the PR (indeed it is assumed that they do approve). However, PRs submitted by PSC members must still go through the review process. </p>
+        <h2>Ammendments</h2>
+        <p>Changes to this governing document can be proposed on the <a href="https://groups.google.com/forum/#!forum/tethysplatform">Tethys Platform GitHub Discussions</a> by any member of the forum by creating a post with the "Amendment" tag. The specific language and section must be included in the proposal. As with other motions, the voting and comment period must last a minimum of 3 business days and only PSC member votes are binding. An amendment motion passes with a 2/3 majority of PSC members voting <b>"+1"</b>. No vetoes are allowed for amendment motion votes.</p>
         <p>Adapted from <a href="http://www.geomajas.org/geomajas/project-steering-committee">GEOMAJAS Project Steering Committee</a>.</p>
       </section>
       <div id="home-page" style="display: none;"></div>
@@ -249,12 +229,6 @@
             <a href="https://www.hydroshare.org/" target="_blank">
               <span class="sponsor-alt">HydroShare</span>
               <img class='sponsor-img' src="https://www.hydroshare.org/static/img/logo-lg.png" alt="HydroShare"/></a></li>
-          <!--<li>-->
-            <!--<a href="https://www.cuahsi.org/" target="_blank">-->
-              <!--<span class="sponsor-alt">CUAHSI</span>-->
-              <!--<img class='sponsor-img' src="https://www.cuahsi.org/img/logo.png" alt="CUAHSI"/>-->
-          <!--</a>-->
-          <!--</li>-->
           <li>
             <a href="http://www.aquaveo.com/" target="_blank">
               <span class="sponsor-alt">Aquaveo</span>
@@ -266,9 +240,8 @@
       <div class="footer-col three">
         <h5>Connect</h5>
         <ul>
+          <li><img class='connect-img' src="images/github-icon.png"/><a href="https://github.com/tethysplatform/tethys" target="_blank">GitHub</a></li>
           <li><a href="https://tethysplatform.slack.com/" target="_blank"><img class='connect-img' src="images/slackcon-header-icon.png"/>Slack</a></li>
-          <li><a href="https://plus.google.com/u/0/111604643390707574976/about" target="_blank"><img class='connect-img' src="images/googleplus-white-sq.png"/>Google+</a></li>
-          <li><a href="https://www.facebook.com/tethysplatform" target="_blank"><img class='connect-img' src="images/facebook-white-sq.png"/>Facebook</a></li>
           <li><a href="http://www.youtube.com/channel/UCRtwiR1XfyKf2s0ngKi1X3g" target="_blank"><img class='connect-img' src="images/youtube-white-sq.png"/>YouTube</a></li>
         </ul>
       </div>
@@ -280,7 +253,7 @@
       </div>
       </div>
       <div class="footer-row footer-footer">
-        <span class="copyright">Copyright © 2014 <a href="http://home.byu.edu/home/" target="_blank">Brigham Young University</a></span>
+        <span class="copyright">Copyright © 2014-2021 <a href="http://home.byu.edu/home/" target="_blank">Tethys Platform</a></span>
         <span class="copyright right">Licensed under the <a href="http://www.tldrlegal.com/l/freebsd" target="_blank">BSD 2-Clause</a></span>
       </div>
     </footer>

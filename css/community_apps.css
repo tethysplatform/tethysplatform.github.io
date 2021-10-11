@@ -27,3 +27,8 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+.app-feature .btn-primary {
+    background-color: #0862A9;
+    border-color: #0862A9;
+}

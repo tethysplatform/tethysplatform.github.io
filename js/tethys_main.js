@@ -84,7 +84,7 @@ var TETHYS_THEME = (function() {
 
 	 		// Get scroll position
 	 		scroll_position = $(window).scrollTop();
-	 		header_height = $('.masthead').outerHeight();
+	 		header_height = $('.header-wrapper').outerHeight();
 
 	 		// Get hero message
 	 		hero_message = $('.hero-message');

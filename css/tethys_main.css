@@ -242,7 +242,6 @@ a.action {
 }
 a:-webkit-any-link {
   text-decoration: none;
-  cursor: auto;
 }
 a {
   color: #2ca6ed;

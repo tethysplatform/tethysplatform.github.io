@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Django">
-    <title> Tethys Platform - Publications</title>
+    <title> Tethys Platform - Community Apps</title>
     <link rel="shortcut icon" href="./images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="css/tethys_main.css" rel="stylesheet">
-    <link href="css/tethys_typography.css" rel="stylesheet">
-    <link href="css/publications.css" rel="stylesheet">
+    <link href="css/community_apps.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
@@ -23,6 +23,7 @@
 
       ga('create', 'UA-56964943-2', 'auto');
       ga('send', 'pageview');
+
     </script>
   </head>
   <body>
@@ -85,32 +86,80 @@
       </ul>
     </div>
     <div id="site-wrapper" class="wrapper">
-      <section id="publications" class="tethys-typography">
-        <h1>Publications</h1>
-        <h2>To cite Tethys Platform use:</h2>
-        <p class="hanging-indent">Swain, N. R., Latu, K., Christensen, S. D., Jones, N. L., Nelson, E. J., Ames, D. P., & Williams, G. P. (2015). A review of open source software solutions for developing water resources web applications. Environmental Modelling & Software, 67, 108-117.</p>
-        <h2>Tethys Platform Bibliography (please add your research).</h2>
-        <h3>Tethys Platform</h3>
-        <p class="hanging-indent">Swain, N. R., Latu, K., Christensen, S. D., Jones, N. L., Nelson, E. J., Ames, D. P., & Williams, G. P. (2015). A review of open source software solutions for developing water resources web applications. Environmental Modelling & Software, 67, 108-117.</p>
-        <p class="hanging-indent">Swain, N. R., Christensen, S. D., Snow, A. D., Dolder, H., Espinoza-Dávalos, G., Goharian, E., Jones, N. L., Ames, D.P., & Burian, S. J. (2016). A new open source platform for lowering the barrier for environmental web app development. Environmental Modelling & Software, 85, 11-26.</p>
-
-        <h3>Tethys Apps</h3>
-        <p class="hanging-indent">Snow, A. D., Christensen, S. D., Swain, N. R., Nelson, E. J., Ames, D. P., Jones, N. L., Ding, D., Noman, N.S., David, C.H., Pappenberger, F. & Zsoter, E. (2016). A High‐Resolution National‐Scale Hydrologic Forecast System from a Global Ensemble Land Surface Model. JAWRA Journal of the American Water Resources Association, 52(4), 950-964.</p>
-
-        <h2>Instructions</h2>
-        <h3>How do I add my citation?</h3>
-        <ol>
-          <li>Fork the <a href="https://github.com/tethysplatform/tethysplatform.github.io">tethysplatform.github.io</a> repository.</li>
-          <li>Add your citation to the <a href="https://github.com/tethysplatform/tethysplatform.github.io/blob/master/publications.html">publications.html</a> page following these guidelines:</li>
-            <ul>
-              <li>Use the <a href="https://www.mendeley.com/guides/apa-citation-guide">APA</a> format.</li>
-              <li>List citations in approriate section (i.e.: papers about apps in the <b>Tethys Apps</b> section and papers related to platform devleopment in the "Tethys Platform" section).</li>
-              <li>List citations in Alphebetical order of author(s), chronological order if multiple for the same author(s).</li>
-            </ul>
-          <li>Submit a pull request with your changes.</li>
-          <li>We will do our best to review in a timely manner. Be sure to watch the pull request thread for feedback.</li>
-        </ol>
-      </section>
+      <div class="container-xxl">
+        <section id="community-apps">
+          <h1>Community Apps</h1>
+          <p class="lead">This page lists apps developed by members of the Tethys community that may have broad appeal. Use the links provided with each app description to get help and report bugs. If you think others could benefit from your app, start a discussion on the <a href="https://github.com/tethysplatform/tethys/discussions">Tethys Platform Discussions</a> and use the label "community-apps".</p>
+          <hr>
+          <!-- App Store Feature -->
+          <div id="app-store-feature" class="app-feature">
+            <div class="row">
+              <div id="description-column" class="col-xl">
+                <div class="row app-feature-body">
+                  <div class="col">
+                    <img class="app-tile rounded float-start" src="./images/community-apps/app-store/app-store-app-tile.png" alt="App Tile">
+                    <h2>Tethys App Store</h2>
+                    <p class="author">Author: <a href="https://github.com/rfun" aria-label="Author">Rohit Khattar</a></p>
+                    <p class="sponsor">Sponsor: <a href="https://hydroinformatics.byu.edu/" aria-label="Sponsor">BYU Hydroinformatics Lab</a></p>
+                    <p class="license">License: <a href="https://github.com/BYU-Hydroinformatics/tethysapp-tethys_app_store/blob/master/LICENSE" aria-label="License">BSD 3-Clause License</a></p>
+                    <p class="description">The Tethys App Store is similar in concept to the iOS App Store for Apple mobile devices or the Google Play Store for Android mobile devices, but exclusively for Tethys Applications. The Tethys App Store aims to make web applications portable by packaging Tethys Applications as Python packages and hosting them on Miniconda repositories. The App Store includes an option for developers to contribute their applications by following a two-step work-flow within the App Store’s user interface. The App Store’s backend processes take care of all the heavy lifting to correctly prepare the code and make it available as an easily installable Miniconda package.</p>
+                    </div>
+                </div>
+                <div class="row app-feature-actions">
+                  <div class="col">
+                    <a class="btn btn-primary" href="https://tethys-app-store.readthedocs.io/en/latest/index.html" role="button"><i class="bi-file-text-fill" role="img" aria-label="GitHub"></i> Documentation</a>
+                    <a class="btn btn-dark" href="https://github.com/BYU-Hydroinformatics/tethysapp-tethys_app_store" role="button"><i class="bi-github" role="img" aria-label="GitHub"></i> GitHub</a>
+                    <a class="btn btn-danger" href="https://github.com/BYU-Hydroinformatics/tethysapp-tethys_app_store/issues" role="button"><i class="bi-bug-fill" role="img" aria-label="Bug"></i> Report a Bug</a>
+                    <a class="btn btn-secondary" href="https://doi.org/10.1016/j.envsoft.2021.105227" role="button"><i class="bi-book" role="img" aria-label="Bug"></i> Publication</a>
+                  </div>
+                </div>
+              </div>
+              <div id="screenshot-column" class="col-xl">
+                <div id="app-store-screenshots" class="app-screenshots carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Screenshot 1"></button>
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="1" aria-label="Screenshot 2"></button>
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="2" aria-label="Screenshot 3"></button>
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="3" aria-label="Screenshot 4"></button>
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="4" aria-label="Screenshot 5"></button>
+                    <button type="button" data-bs-target="#app-store-screenshots" data-bs-slide-to="5" aria-label="Screenshot 6"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-home.png" class="d-block w-100" alt="Tethys App Store Dashboard">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-available-apps.png" class="d-block w-100" alt="Available Tethys Applications Table">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-installed-apps.png" class="d-block w-100" alt="Installed Tethys Applications Table">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-install.png" class="d-block w-100" alt="Interactive App Installation">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-install-settings.png" class="d-block w-100" alt="Configure Services and Settings Interactively">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000000">
+                      <img src="./images/community-apps/app-store/app-store-submit-new.png" class="d-block w-100" alt="Submit Any Tethys App to Tethys App Store">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#app-store-screenshots" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#app-store-screenshots" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /App Store Feature -->
+          <hr>
+        </section>
+      </div>
       <div id="home-page" style="display: none;"></div>
     </div>
     <footer id="site-footer" class="site-footer">
@@ -136,12 +185,6 @@
             <a href="https://www.hydroshare.org/" target="_blank">
               <span class="sponsor-alt">HydroShare</span>
               <img class='sponsor-img' src="https://www.hydroshare.org/static/img/logo-lg.png" alt="HydroShare"/></a></li>
-          <!--<li>-->
-            <!--<a href="https://www.cuahsi.org/" target="_blank">-->
-              <!--<span class="sponsor-alt">CUAHSI</span>-->
-              <!--<img class='sponsor-img' src="https://www.cuahsi.org/img/logo.png" alt="CUAHSI"/>-->
-          <!--</a>-->
-          <!--</li>-->
           <li>
             <a href="http://www.aquaveo.com/" target="_blank">
               <span class="sponsor-alt">Aquaveo</span>

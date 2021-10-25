@@ -1,0 +1,40 @@
+#community-apps {
+    margin-bottom: 50px;
+}
+
+.lead {
+    margin-bottom: 40px;
+}
+
+.app-feature .app-tile {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.app-feature .author,
+.app-feature .sponsor {
+    margin-bottom:0.25rem;
+}
+
+.app-feature .app-feature-actions {
+    margin-bottom: 10px;
+}
+
+.app-feature .app-feature-actions .btn {
+    margin-bottom: 5px;
+}
+
+.app-feature .app-screenshots {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.app-feature .btn-primary {
+    background-color: #0862A9;
+    border-color: #0862A9;
+}
+
+.app-feature .btn-primary:hover {
+    background-color: #065796;
+    border-color: #065796;
+}

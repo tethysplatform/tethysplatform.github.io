@@ -1,0 +1,57 @@
+.tethys-typography {
+  margin: 0 150px;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.tethys-typography p {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  line-height: 1.75;
+  color: #666666;
+}
+
+.tethys-typography ul, .tethys-typography ol {
+    margin-bottom: 0.5em;
+}
+
+.tethys-typography li {
+  color: #666666;
+}
+
+.tethys-typography h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.tethys-typography h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.tethys-typography h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.tethys-typography h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #888888;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+    .tethys-typography {
+        margin: 0 50px;
+        margin-bottom: 50px;
+    }
+}

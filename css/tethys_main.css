@@ -81,7 +81,7 @@
 }
 
 .header-dropdown-menu.community {
-    right: 93px;
+    right: 150px;
 }
 
 .header-dropdown-menu.getting-started {
@@ -242,7 +242,6 @@ a.action {
 }
 a:-webkit-any-link {
   text-decoration: none;
-  cursor: auto;
 }
 a {
   color: #2ca6ed;
@@ -296,7 +295,7 @@ a:hover {
 }
 #site-footer,
 #site-wrapper:after {
-  height: 500px;
+  height: 501px;
 }
 @media (max-width: 860px) {
   #site-wrapper {

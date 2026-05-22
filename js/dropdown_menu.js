@@ -6,7 +6,15 @@ $(function() {
         var target = $($(this).attr('data-target'));
         var mask = $($(this).attr('data-mask'));
 
+        // Align dropdown's left edge with the trigger's left edge.
+        // Computed at open time so the nav can be reordered freely.
+        var position_target = function() {
+            var rect = trigger.getBoundingClientRect();
+            target.css({left: rect.left + 'px', right: 'auto'});
+        };
+
         var toggle_menu = function() {
+            position_target();
             $(trigger).toggleClass('active');
             $(target).toggleClass('open');
             $(mask).toggleClass('active');

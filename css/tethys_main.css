@@ -80,12 +80,7 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
-.header-dropdown-menu.community {
-    right: 150px;
-}
-
 .header-dropdown-menu.getting-started {
-    right: 426px;
     width: 148px;
 }
 
@@ -489,6 +484,31 @@ a:hover {
     background: #1b95dc;
 }
 
+.site-header .header-nav li a .external-icon {
+    width: 0.7em;
+    height: 0.7em;
+    margin-left: 5px;
+    vertical-align: baseline;
+    fill: currentColor;
+    opacity: 0.7;
+}
+
+.site-header .header-nav li.header-cta a {
+    padding: 0 16px;
+    color: #ffffff;
+    background-color: #1b95dc;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.site-header .header-nav li.header-cta a:hover {
+    background-color: #2ba6ed;
+    box-shadow: 0 2px 8px rgba(27, 149, 220, 0.6);
+    transform: translateY(-1px);
+}
+
 .site-header .header-nav {
     margin-bottom: 0;
     margin-top: 25px;
@@ -596,14 +616,15 @@ a:hover {
   width: 100%;
   height: auto;
   z-index: 998;
-  top: -450px;
+  top: 0;
   left: 0;
+  transform: translateY(-100%);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
-  -webkit-transition: top 0.4s ease-in-out;
-  -moz-transition: top 0.4s ease-in-out;
-  -o-transition: top 0.4s ease-in-out;
-  -ms-transition: top 0.4s ease-in-out;
-  transition: top 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .mobile-nav ul {
   list-style: none;
@@ -623,7 +644,7 @@ a:hover {
   color: #0a84cb;
 }
 .mobile-nav.in {
-  top: 79px;
+  transform: translateY(79px);
 }
 .mobile-nav-button {
   display: none;
@@ -1396,7 +1417,7 @@ li.dataset-item .dataset-content p {
    The footer at the bottom of the site
    ==================================== */
 footer.site-footer {
-  background-color: #0a62a9;
+  background-color: #053a6b;
   position: relative;
   z-index: 100;
   box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);

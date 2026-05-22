@@ -9,3 +9,4 @@
 *.db
 settings.py
 .remember/
+.gstack/
